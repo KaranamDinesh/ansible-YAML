@@ -1,5 +1,5 @@
 - name: sample play
-  hosts: all
+  hosts: localhost
   tasks:
     - debug:
         msg: Hello world
