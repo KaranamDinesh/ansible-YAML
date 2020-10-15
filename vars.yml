@@ -1,5 +1,5 @@
 - name: how to declare variables
-  hosts: all
+  hosts: localhost
   vars:
    URL: example.com
   tasks:
