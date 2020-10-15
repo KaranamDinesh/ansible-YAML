@@ -28,4 +28,4 @@
   tasks:
     - name: Print variable from prompt
       debug:
-      msg: URL= {{URL}}
+        msg: URL= {{URL}}
