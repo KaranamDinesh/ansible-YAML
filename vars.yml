@@ -22,10 +22,10 @@
 - name: Declare variable in command prompt
   hosts: all
   vars_prompt:
-  - name: URL
+  - name: Enter URL
     prompt: Enter URL
     private: no
   tasks:
     - name: Print variable from prompt
-       debug:
-         msg: URL= {{URL}}
+      debug:
+       msg: URL= {{URL}}
