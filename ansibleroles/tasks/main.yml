@@ -1,3 +1,7 @@
-- name: Print Helloo from Role
-  debug:
-    msg: Heloo from Role
+- name: how to declare variables
+  vars:
+    URL: example.com
+  tasks:
+    - name: Print variable
+      debug:
+        msg: URL= {{URL}}
