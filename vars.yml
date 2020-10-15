@@ -1,7 +1,7 @@
 - name: how to declare variables
   hosts: all
   vars:
-   URL= example.com
+   URL: example.com
   tasks:
     - name: Print variable
       debug:
