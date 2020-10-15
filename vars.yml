@@ -40,3 +40,9 @@
     - name: Print OUTPUT
       debug:
         msg: OUTPUT = {{OUTPUT}}
+- name: Declare variables from inventory file and access them
+  hosts: all
+  tasks:
+    - name: Print variable
+      debug:
+        msg: URL = {{URL}}
