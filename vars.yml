@@ -29,3 +29,14 @@
     - name: Print variable from prompt
       debug:
         msg: URL= {{URL}}
+- name: Register Variables
+  hosts: all
+  tasks:
+    - name: Find files
+      find:
+        paths: /boot
+      register: OUTPUT
+
+    - name: Print OUTPUT
+      debug:
+        msg: OUTPUT = {{OUTPUT}}
