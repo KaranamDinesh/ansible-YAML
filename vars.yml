@@ -19,3 +19,13 @@
     - name: Print variable from a file
       debug:
         msg: URL= {{URL}}
+- name: Declare variable in command prompt
+  hosts: all
+  vars_prompt:
+  - name: Give URL
+    prompt: Enter URL
+    private: no
+  tasks:
+    - name: Print variable from prompt
+      debug:
+        msg: URL= {{URL}}
