@@ -22,7 +22,7 @@
 - name: Declare variable in command prompt
   hosts: all
   vars_prompt:
-  - name: Give URL
+  - name: URL
     prompt: Enter URL
     private: no
   tasks:
