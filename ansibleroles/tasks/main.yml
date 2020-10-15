@@ -1,6 +1,4 @@
 - name: how to declare variables
-  vars:
-    URL: example.com
   tasks:
     - name: Print variable
       debug:
