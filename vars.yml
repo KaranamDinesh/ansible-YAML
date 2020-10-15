@@ -6,3 +6,8 @@
     - name: Print variable
       debug:
         msg: URL= {{URL}}
+    - name: Print variable from task level
+      vars:
+        URL: google.com
+      debug:
+        msg: URL= {{URL}}
