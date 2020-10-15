@@ -1,5 +1,3 @@
-- name: how to declare variables
-  tasks:
-    - name: Print variable
-      debug:
-        msg: URL= {{URL}}
+- name: Print hello from role
+  debug:
+    msg: Print hello from role, URL= {{URL}}
