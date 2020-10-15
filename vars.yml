@@ -24,7 +24,7 @@
   vars_prompt:
   - name: URL
     prompt: Enter URL
-    private: no
+    private: yes
   tasks:
     - name: Print variable from prompt
       debug:
