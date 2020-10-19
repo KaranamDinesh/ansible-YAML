@@ -9,10 +9,7 @@
     state: started
     enabled: yes
 
-- name: Copy Azure devops repo file
-  copy:
-    src: azurecli.repo
-    dest: /etc/yum.repos.d/
+
 
 - name: Install Azure CLI
   yum:
