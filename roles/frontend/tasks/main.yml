@@ -11,13 +11,14 @@
 
 - name: Copy Azure devops repo file
   copy:
-    src: azure-cli.repo
+    src: azurecli.repo
     dest: /etc/yum.repos.d
 
 - name: Install Azure CLI
   yum:
     name: [ "azure-cli" , "libicu" ]
     state: latest
+
 - name: Download azure artifacts
   shell: az artifacts universal download --organization "https://dev.azure.com/karanamdine/" --feed "karanamdine" --name "my-first-package" --version "0.0.1" --path .
 
