@@ -19,6 +19,9 @@
     name: [ "azure-cli" , "libicu" ]
     state: latest
 
+- name: Install azure Devops extension
+  shell: az extension add --name azure-devops
+
 - name: Download azure artifacts
   shell: az artifacts universal download --organization "https://dev.azure.com/karanamdine/" --feed "karanamdine" --name "my-first-package" --version "0.0.1" --path .
 
