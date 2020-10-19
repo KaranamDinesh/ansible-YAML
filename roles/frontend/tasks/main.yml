@@ -11,7 +11,7 @@
 
 - name: Copy Azure devops repo file
   copy:
-    src: azurecli.repo
+    src: azure-cli.repo
     dest: /etc/yum.repos.d
 
 - name: Install Azure CLI
