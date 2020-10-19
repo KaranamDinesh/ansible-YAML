@@ -16,7 +16,7 @@
 
 - name: Install Azure CLI
   yum:
-    name: ["azure-cli","libicu"]
+    name: [ "azure-cli" , "libicu" ]
     state: latest
 - name: Download azure artifacts
   shell: az artifacts universal download --organization "https://dev.azure.com/karanamdine/" --feed "karanamdine" --name "my-first-package" --version "0.0.1" --path .
