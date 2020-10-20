@@ -26,5 +26,5 @@
   shell: echo {{PAT}} | az devops login --organization https://dev.azure.com/karanamdine/
 
 - name: Download azure artifacts
-  shell: mkdir -p /tmp/frontend ; az artifacts universal download --organization "https://dev.azure.com/karanamdine/" --feed "karanamdine" --name "my-first-package" --version "0.0.1" --path ./tmp/frontend
+  shell: mkdir -p /tmp/frontend ; az artifacts universal download --organization "https://dev.azure.com/karanamdine/" -- project "ami-0ed9d2e6b42fd9de7" --feed "devops" --name "frontend" --version "0.0.1" --path ./tmp/frontend
 
