@@ -25,10 +25,7 @@
 - name: Login to Azure Devops
   shell: echo {{PAT}} | az devops login --organization https://dev.azure.com/karanamdine/
 
-- name: Remove old htdocs
-    file:
-      path: /usr/share/nginx/html
-      state: absent
+
 - name: create htdocs directory
     file:
       path: /usr/share/nginx/html
