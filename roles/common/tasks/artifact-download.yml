@@ -1,0 +1,2 @@
+- name: Download azure artifacts
+  shell: az artifacts universal download --organization "https://dev.azure.com/karanamdine/" --project "3cb1a8ea-5f45-42d2-8e70-fcfad9f67d46" --scope project --feed "devops" --name "frontend1" --version "*" --path usr/share/nginx/html

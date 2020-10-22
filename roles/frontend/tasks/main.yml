@@ -9,29 +9,22 @@
     state: started
     enabled: yes
 
-- name: Copy Azure devops repo file
-  copy:
-    src: azurecli.repo
-    dest: /etc/yum.repos.d
-
-- name: Install Azure CLI
-  yum:
-    name: [ "azure-cli" , "libicu" ]
-    state: latest
-
-- name: Install azure Devops extension
-  shell: az extension add --name azure-devops
-
-- name: Login to Azure Devops
-  shell: echo {{PAT}} | az devops login --organization https://dev.azure.com/karanamdine/
+- name: Include AZ CLI Installation steps
+  include_role:
+     name: common
+     tasks_from: az-cli-setup
 
 - name: remove old htdocs
   file:
     path: usr/share/nginx/html
     state: absent
+
 - name: create new htdocs
   file:
     path: usr/share/nginx/html
     state: directory
-- name: Download azure artifacts
-  shell: az artifacts universal download --organization "https://dev.azure.com/karanamdine/" --project "3cb1a8ea-5f45-42d2-8e70-fcfad9f67d46" --scope project --feed "devops" --name "frontend1" --version "*" --path usr/share/nginx/html
+
+- name: Include artifact download steps
+  include_role:
+    name: common
+    tasks_from: artifact-download
