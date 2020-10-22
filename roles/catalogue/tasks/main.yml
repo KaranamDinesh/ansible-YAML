@@ -3,4 +3,21 @@
     name: ["nodejs", "make", "gcc-c++" ]
     state: present
 
-- name:
+- name: Add roboshop user
+  user:
+    name: roboshop
+
+- name: Include AZ CLI Installation steps
+  include_role:
+    name: common
+    tasks_from: az-cli-setup
+
+- name: create artifact directory
+  file:
+    path: "{{ARTIFACT_PATH}}"
+    state: directory
+
+- name: Include artifact download steps
+  include_role:
+    name: common
+    tasks_from: artifact-download

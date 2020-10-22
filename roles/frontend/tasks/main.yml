@@ -16,12 +16,12 @@
 
 - name: remove old htdocs
   file:
-    path: usr/share/nginx/html
+    path: "{{ARTIFACT_PATH}}"
     state: absent
 
 - name: create new htdocs
   file:
-    path: usr/share/nginx/html
+    path: "{{ARTIFACT_PATH}}"
     state: directory
 
 - name: Include artifact download steps

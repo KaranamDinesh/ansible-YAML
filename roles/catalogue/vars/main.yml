@@ -1,0 +1,2 @@
+COMPONENT: "catalogue"
+ARTIFACT_PATH: /home/catalogue/{{COMPONENT}}
