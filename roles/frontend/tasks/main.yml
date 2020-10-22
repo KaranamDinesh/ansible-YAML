@@ -3,12 +3,6 @@
     name: nginx
     state: present
 
-- name: start nginx service
-  systemd:
-    name: nginx
-    state: started
-    enabled: yes
-
 - name: Include AZ CLI Installation steps
   include_role:
      name: common
@@ -28,3 +22,9 @@
   include_role:
     name: common
     tasks_from: artifact-download
+
+- name: start nginx service
+  systemd:
+    name: nginx
+    state: started
+    enabled: yes
