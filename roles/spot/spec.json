@@ -1,0 +1,9 @@
+{
+  "ImageId": "ami-0ed9d2e6b42fd9de7",
+  "KeyName": "devops",
+  "SecurityGroupIds": [ "sg-0c704afde8a4fb6b6" ],
+  "InstanceType": "t2.micro",
+  "Placement": {
+    "AvailabilityZone": "us-east-2a"
+  }
+}
