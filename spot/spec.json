@@ -1,6 +1,6 @@
 {
   "IamFleetRole": "arn:aws:iam::107712564800:role/aws-ec2-spot-fleet-tagging-role",
-  "AllocationStrategy": "capacityOptimized",
+  "AllocationStrategy": "lowestPrice",
   "TargetCapacity": 1,
   "ValidFrom": "2020-10-23T13:28:02Z",
   "ValidUntil": "2021-10-23T13:28:02Z",
