@@ -5,7 +5,7 @@
     - name: Import frontend role
       import_role:
         name: frontend
-        when: component == "frontend"
+      when: component == "frontend"
     - name: Import catalogue role
       import_role:
         name: catalogue
