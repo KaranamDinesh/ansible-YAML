@@ -2,6 +2,10 @@
   hosts: localhost
   become: yes
   tasks:
+    - name: Prechecks
+      import_role:
+        name: common
+        tasks_from: prechecks
     - name: Import frontend role
       import_role:
         name: frontend
