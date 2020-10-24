@@ -1,7 +1,7 @@
 - name: Install nginx
   yum:
     name: nginx
-    state: present
+    state: latest
 
 - name: Include AZ CLI Installation steps
   include_role:
