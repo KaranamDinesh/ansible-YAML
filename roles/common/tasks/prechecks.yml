@@ -1,0 +1,8 @@
+- name: check a PAT variable
+  when: PAT is undefined
+  fail:
+    msg: "PAT variable is expected"
+- name: check a component variable
+  when: component is undefined
+  fail:
+    msg: "component variable is expected"
