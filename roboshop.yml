@@ -9,7 +9,7 @@
     - name: Import frontend role
       import_role:
         name: frontend
-      when: COMPONENT == "frontend"
+      when: COMPONENT == "frontend1"
     - name: Import catalogue role
       import_role:
         name: catalogue
