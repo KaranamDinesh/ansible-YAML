@@ -10,16 +10,7 @@
       import_role:
         name: frontend
       when: component == "frontend"
-      tags:
-        - frontend
-      vars:
-        COMPONENT: "{{component}}"
-
     - name: Import catalogue role
       import_role:
         name: catalogue
       when: component == "catalogue"
-      tags:
-        - catalogue
-      vars:
-        COMPONENT: "{{component}}"
