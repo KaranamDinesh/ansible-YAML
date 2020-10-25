@@ -1,11 +1,11 @@
 {
   "Comment": "DNS Record",
   "Changes": [ {
-    "Action": "CREATE",
+    "Action": "UPSERT",
     "ResourceRecordSet": {
-      "Name": "DNS_NAME",
+      "Name": "DNS_NAME.dinesh1234.tech",
       "Type": "A",
       "TTL": 300,
-      "ResourceRecords": [{"Value": "IP"}]
+      "ResourceRecords": [{"Value": "IPADDRESS"}]
     }}]
 }
