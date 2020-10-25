@@ -1,0 +1,11 @@
+{
+  "Comment": "DNS Record",
+  "Changes": [ {
+    "Action": "CREATE",
+    "ResourceRecordSet": {
+      "Name": "DNS_NAME",
+      "Type": "A",
+      "TTL": 300,
+      "ResourceRecords": [{"Value": "IP"}]
+    }}]
+}
