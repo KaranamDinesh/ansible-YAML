@@ -12,6 +12,8 @@
       when: component == "frontend"
       tags:
         - frontend
+      vars:
+        COMPONENT: "{{component}}"
 
     - name: Import catalogue role
       import_role:
@@ -19,3 +21,5 @@
       when: component == "catalogue"
       tags:
         - catalogue
+      vars:
+        COMPONENT: "{{component}}"
