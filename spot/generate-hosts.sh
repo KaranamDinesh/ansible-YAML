@@ -1,6 +1,6 @@
 #!/bin/bash
 
-rm -f /tmp/hosts
+sudo rm -f /tmp/hosts
 
 for i in *.json ; do
   COMPONENT=$(echo $i | sed -e 's/.json//')
