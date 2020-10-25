@@ -1,2 +1,3 @@
 COMPONENT: "frontend1"
+component: "frontend"
 ARTIFACT_PATH: /usr/share/nginx/html
