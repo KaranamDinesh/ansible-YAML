@@ -21,7 +21,16 @@
   include_role:
     name: common
     tasks_from: artifact-download
+
 - name: Setup catalogue service
   template:
     src: catalogue.service
     dest: /etc/systemd/system/catalogue.service
+
+- name: Start catalogue service
+  systemd:
+    name: catalogue
+    state: restarted
+    enabled: yes
+    daemon_reload: yes
+

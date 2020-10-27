@@ -1,2 +1,3 @@
 COMPONENT: "frontend1"
-ARTIFACT_PATH: c
+ARTIFACT_PATH: /usr/share/nginx/html
+CATALOGUE_HOST: mongo.dinesh1234.tech

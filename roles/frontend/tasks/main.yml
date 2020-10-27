@@ -22,6 +22,11 @@
   include_role:
     name: common
     tasks_from: artifact-download
+- name: Update Nginx configuration
+  template:
+    src: nginx.conf
+    dest: /etc/nginx/nginx.conf
+  notify: Restart NGINX
 
 - name: start nginx service
   systemd:

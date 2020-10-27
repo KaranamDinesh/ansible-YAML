@@ -6,11 +6,34 @@
       import_role:
         name: common
         tasks_from: prechecks
+      tags:
+        - frontend
+        - catalogue
+        - mongo
+        - user
+        - redis
+        - cart
+        - shipping
+        - payment
+        - rabbitmq
+        - mysql
     - name: Import frontend role
       import_role:
         name: frontend
       when: component == "frontend"
+      tags:
+        - frontend
     - name: Import catalogue role
       import_role:
         name: catalogue
       when: component == "catalogue"
+      tags:
+        - catalogue
+    - name: Import Mongo role
+      import_role:
+        name: mongo
+      when: component == "mongo"
+      tags:
+        -mongo
+
+

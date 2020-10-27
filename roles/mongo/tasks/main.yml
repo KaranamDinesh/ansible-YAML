@@ -1,0 +1,49 @@
+- name: Create MongoDB repo
+  yum_repository:
+    name: mongodb-org-4.2
+    description: MongoDB Repository
+    baseurl: https://repo.mongodb.org/yum/redhat/$releasever/mongodb-org/4.2/x86_64/
+    gpgcheck: yes
+    enabled: yes
+    gpgkey: https://www.mongodb.org/static/pgp/server-4.2.asc
+
+- name: Install MongoDB
+  yum:
+    name: mongodb-org
+    state: latest
+
+- name: Replace Listen Address for Mongo
+  replace:
+    path: /etc/mongod.conf
+    regexp: '127.0.0.1'
+    replace: '0.0.0.0'
+
+- name: Start MongoDB
+  systemd:
+    name: mongod
+    state: started
+    enabled: yes
+
+- name: Include AZ CLI Installation steps
+  include_role:
+    name: common
+    tasks_from: az-cli-setup
+
+- name: create artifact directory
+  file:
+    path: "{{ARTIFACT_PATH}}"
+    state: directory
+
+- name: Include artifact download steps
+  include_role:
+    name: common
+    tasks_from: artifact-download
+
+
+- name: Load MongoDB Schema
+  shell: mongo < {{ item }}
+  args:
+    chdir: "{{ARTIFACT_PATH}}"
+  loop:
+    - catalogue.js
+    - users.js
