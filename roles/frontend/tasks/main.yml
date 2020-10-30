@@ -1,37 +1,37 @@
-- name: Install nginx
+- name: Install Nginx
   yum:
     name: nginx
     state: latest
 
-- name: Include AZ CLI Installation steps
+- name: Include AZ CLI Installation Steps
   include_role:
-     name: common
-     tasks_from: az-cli-setup
+    name: common
+    tasks_from: az-cli-setup
 
-- name: remove old htdocs
+- name: Remove old htdocs
   file:
     path: "{{ARTIFACT_PATH}}"
     state: absent
 
-- name: create new htdocs
+- name: Create HtDocs Directory
   file:
     path: "{{ARTIFACT_PATH}}"
     state: directory
 
-- name: Include artifact download steps
+- name: Include Artifact Download Steps
   include_role:
     name: common
     tasks_from: artifact-download
 
-- name: Update Nginx configuration
+- name: Update Nginx Configuration
   template:
     src: nginx.conf
     dest: /etc/nginx/nginx.conf
   notify: Restart NGINX
 
-- name: start nginx service
+- name: Start Nginx Service
   systemd:
     name: nginx
     state: started
     enabled: yes
-    daemon_reload: yes
+  ignore_errors: yes
