@@ -1,0 +1,16 @@
+- name: Include Steps for NodeJS
+  include_role:
+    name: common
+    tasks_from: nodejs
+
+- name: Setup Cart Service
+  template:
+    src: cart.service
+    dest: /etc/systemd/system/cart.service
+
+- name: Start Cart Service
+  systemd:
+    name: cart
+    state: restarted
+    enabled: yes
+    daemon_reload: yes

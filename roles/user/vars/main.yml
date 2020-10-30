@@ -1,0 +1,4 @@
+COMPONENT: "user"
+ARTIFACT_PATH: /home/roboshop/{{COMPONENT}}
+MONGO_ENDPOINT: mongo.devopsb51.tk
+REDIS_ENDPOINT: redis.devopsb51.tk

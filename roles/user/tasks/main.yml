@@ -1,0 +1,16 @@
+- name: Include Steps for NodeJS
+  include_role:
+    name: common
+    tasks_from: nodejs
+
+- name: Setup User Service
+  template:
+    src: user.service
+    dest: /etc/systemd/system/user.service
+
+- name: Start User Service
+  systemd:
+    name: user
+    state: restarted
+    enabled: yes
+    daemon_reload: yes
