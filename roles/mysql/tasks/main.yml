@@ -1,0 +1,22 @@
+- name: Copy MySQL Repo
+  copy:
+    src: mysql.repo
+    dest: /etc/yum.repos.d/mysql.repo
+
+- name: INstall MySQL and Dependencies
+  yum:
+    name: ["mysql-community-server", "python2-PyMySQL"]
+    state: latest
+
+- name: Start MySQL
+  systemd:
+    name: mysqld
+    state: started
+
+- name: Grab default password
+  shell: grep 'temporary password' /var/log/mysqld.log | awk '{print $NF}'
+  register: MYSQL_DEFAULT_PASSWORD
+
+- name: Print password
+  debug:
+    msg: '{{MYSQL_DEFAULT_PASSWORD}}
