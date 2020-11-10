@@ -19,4 +19,4 @@
 
 - name: Print password
   debug:
-    msg: '{{MYSQL_DEFAULT_PASSWORD}}'
+    msg: "{{MYSQL_DEFAULT_PASSWORD}}"
