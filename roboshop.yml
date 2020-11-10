@@ -1,5 +1,5 @@
 - name: roboshop project setup with ansible
-  hosts: all
+  hosts: localhost
   become: yes
   tasks:
     - name: Prechecks
@@ -35,6 +35,7 @@
       when: component == "mongo"
       tags:
         - mongo
+
     - name: Import mysql role
         import_role:
           name: mysql
