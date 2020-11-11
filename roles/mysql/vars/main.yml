@@ -1,2 +1,3 @@
 COMPONENT: "mysql"
 component: "mysql"
+MYSQL_ROOT_PASSWORD: "password"
