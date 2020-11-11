@@ -31,6 +31,13 @@
     login_password: "{{MYSQL_DEFAULT_PASSWORD}}"
     state: present
 
+- name: COpy rest password scrip
+  template:
+    src: mysql-root-password-reset.sql
+    dest: /tmp/mysql-root-password-reset.sql
+
+- name: Set root user password
+  shell: mysql --connect-expired-password -uroot -p"{{MYSQL_DEFAULT_PASSWORD.stdout}}" </tmp/mysql-root-password-reset.sql
 
 
 
