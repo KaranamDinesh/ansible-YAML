@@ -1,0 +1,21 @@
+- name: Include Steps for Maven
+  include_role:
+    name: common
+    tasks_from: maven
+
+- name: Include Steps for Rsyslog
+  include_role:
+    name: common
+    tasks_from: rsyslog
+
+- name: Setup Shipping Service
+  template:
+    src: shipping.service
+    dest: /etc/systemd/system/shipping.service
+
+- name: Start Shipping Service
+  systemd:
+    name: shipping
+    state: restarted
+    enabled: yes
+    daemon_reload: yes

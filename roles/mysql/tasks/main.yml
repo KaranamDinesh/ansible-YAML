@@ -30,6 +30,28 @@
 - name: Set root user password
   shell: mysql --connect-expired-password -uroot -p"{{MYSQL_DEFAULT_PASSWORD.stdout}}" </tmp/mysql-root-password-reset.sql
 
+- name: Include AZ CLI Installation Steps
+  include_role:
+    name: common
+    tasks_from: az-cli-setup
+
+- name: Create Artifact directory
+  file:
+    path: "{{ARTIFACT_PATH}}"
+    state: directory
+
+- name: Include Artifact Download Steps
+  include_role:
+    name: common
+    tasks_from: artifact-download
+
+- name: Load Schema
+  community.mysql.mysql_db:
+    state: import
+    name: all
+    login_user: root
+    login_password: "{{MYSQL_ROOT_PASSWORD}}"
+    target: /tmp/mysql/shipping.sql
 
 
 

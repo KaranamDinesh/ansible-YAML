@@ -1,0 +1,7 @@
+COMPONENT: "payment"
+ARTIFACT_PATH: /home/roboshop/{{COMPONENT}}
+CART_HOST: cart.dinesh1234.tech
+USER_HOST: user.dinesh1234.tech
+AMQP_HOST: rabbitmq.dinesh1234.tech
+AMQP_USER: roboshop
+AMQP_PASS: roboshop123
