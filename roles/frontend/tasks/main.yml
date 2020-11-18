@@ -23,7 +23,6 @@
     name: common
     tasks_from: artifact-download
 
-
 - name: Update Nginx Configuration
   template:
     src: nginx.conf
