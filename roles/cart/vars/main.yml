@@ -3,3 +3,4 @@ ARTIFACT_PATH: /home/roboshop/{{COMPONENT}}
 MONGO_ENDPOINT: mongo.dinesh1234.tech
 REDIS_ENDPOINT: redis.dinesh1234.tech
 CATALOGUE_ENDPOINT: catalogue.dinesh1234.tech
+CATALOGUE_PORT: 8000
