@@ -6,3 +6,4 @@ AMQP_HOST: rabbitmq.dinesh1234.tech
 AMQP_USER: roboshop
 AMQP_PASS: roboshop123
 CART_PORT: 8000
+USER_PORT: 8000
