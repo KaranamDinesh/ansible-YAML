@@ -3,6 +3,12 @@
     name: ["nodejs", "make", "gcc-c++" ]
     state: present
 
+- name: Include Steps for Rsyslog
+  include_role:
+    name: common
+    tasks_from: rsyslog
+
+
 - name: Add roboshop user
   user:
     name: roboshop
