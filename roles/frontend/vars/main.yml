@@ -1,6 +1,6 @@
 COMPONENT: "frontend"
 ARTIFACT_PATH: /usr/share/nginx/html
-#CATALOGUE_HOST: catalogue.dinesh1234.tech
+CATALOGUE_HOST: catalogue.dinesh1234.tech
 USER_HOST: user.dinesh1234.tech
 CART_HOST: cart.dinesh1234.tech
 SHIPPING_HOST: shipping.dinesh1234.tech
