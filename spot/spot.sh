@@ -10,4 +10,3 @@ if [ -z $1 ]; then
 fi
 
 aws ec2 request-spot-fleet --spot-fleet-request-config file://$1
-
