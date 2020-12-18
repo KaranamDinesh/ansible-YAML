@@ -7,5 +7,4 @@ for i in *.json ; do
   sed -e "s/IPADDRESS/${IP}/" -e "s/DNS_NAME/${COMPONENT}/" record > /tmp/record.json
 
   aws route53 change-resource-record-sets --hosted-zone-id Z0028975ZU6XMKYE06RQ --change-batch file:///tmp/record.json
-
 done
