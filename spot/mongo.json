@@ -1,279 +1,119 @@
 {
-  "IamFleetRole": "arn:aws:iam::107712564800:role/aws-ec2-spot-fleet-tagging-role",
+  "IamFleetRole": "arn:aws:iam::141210212978:role/aws-ec2-spot-fleet-tagging-role",
   "AllocationStrategy": "capacityOptimized",
   "TargetCapacity": 1,
-  "ValidFrom": "2020-10-30T06:32:58Z",
-  "ValidUntil": "2021-10-30T06:32:58Z",
-  "SpotPrice": "0.0832",
+  "ValidFrom": "2020-12-18T03:42:56Z",
+  "ValidUntil": "2021-12-18T03:42:56Z",
   "TerminateInstancesWithExpiration": true,
-  "LaunchSpecifications": [
+  "LaunchSpecifications": [],
+  "Type": "request",
+  "LaunchTemplateConfigs": [
     {
-      "ImageId": "ami-0e87ff30dbaecc3cb",
-      "InstanceType": "t3.micro",
-      "SubnetId": "subnet-4320f628, subnet-82b7bbf8, subnet-7a641336",
-      "KeyName": "devops",
-      "BlockDeviceMappings": [
+      "LaunchTemplateSpecification": {
+        "LaunchTemplateId": "lt-03810ca5fcf70eca9",
+        "Version": "1"
+      },
+      "Overrides": [
         {
-          "DeviceName": "/dev/sda1",
-          "Ebs": {
-            "DeleteOnTermination": true,
-            "SnapshotId": "snap-06c799c048c6a1163",
-            "VolumeSize": 16,
-            "VolumeType": "gp2",
-            "Encrypted": false
-          }
+          "InstanceType": "t3.medium",
+          "WeightedCapacity": 1,
+          "SubnetId": "subnet-1c8f5b77"
         },
         {
-          "DeviceName": "/dev/xvdb",
-          "VirtualName": "ephemeral0"
+          "InstanceType": "t3.medium",
+          "WeightedCapacity": 1,
+          "SubnetId": "subnet-c21517b8"
         },
         {
-          "DeviceName": "/dev/xvdc",
-          "VirtualName": "ephemeral1"
-        }
-      ],
-      "SpotPrice": "0.0104",
-      "SecurityGroups": [
-        {
-          "GroupId": "sg-0c704afde8a4fb6b6"
-        }
-      ],
-      "TagSpecifications": [
-        {
-          "ResourceType": "instance",
-          "Tags": [
-            {
-              "Key": "Name",
-              "Value": "mongo"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "ImageId": "ami-0e87ff30dbaecc3cb",
-      "InstanceType": "t3a.micro",
-      "SubnetId": "subnet-4320f628, subnet-82b7bbf8, subnet-7a641336",
-      "KeyName": "devops",
-      "BlockDeviceMappings": [
-        {
-          "DeviceName": "/dev/sda1",
-          "Ebs": {
-            "DeleteOnTermination": true,
-            "SnapshotId": "snap-06c799c048c6a1163",
-            "VolumeSize": 16,
-            "VolumeType": "gp2",
-            "Encrypted": false
-          }
+          "InstanceType": "t3.medium",
+          "WeightedCapacity": 1,
+          "SubnetId": "subnet-f49df7b8"
         },
         {
-          "DeviceName": "/dev/xvdb",
-          "VirtualName": "ephemeral0"
+          "InstanceType": "t3a.medium",
+          "WeightedCapacity": 1,
+          "SubnetId": "subnet-1c8f5b77"
         },
         {
-          "DeviceName": "/dev/xvdc",
-          "VirtualName": "ephemeral1"
-        }
-      ],
-      "SpotPrice": "0.0094",
-      "SecurityGroups": [
-        {
-          "GroupId": "sg-0c704afde8a4fb6b6"
-        }
-      ],
-      "TagSpecifications": [
-        {
-          "ResourceType": "instance",
-          "Tags": [
-            {
-              "Key": "Name",
-              "Value": "mongo"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "ImageId": "ami-0e87ff30dbaecc3cb",
-      "InstanceType": "t3.nano",
-      "SubnetId": "subnet-4320f628, subnet-82b7bbf8, subnet-7a641336",
-      "KeyName": "devops",
-      "BlockDeviceMappings": [
-        {
-          "DeviceName": "/dev/sda1",
-          "Ebs": {
-            "DeleteOnTermination": true,
-            "SnapshotId": "snap-06c799c048c6a1163",
-            "VolumeSize": 16,
-            "VolumeType": "gp2",
-            "Encrypted": false
-          }
+          "InstanceType": "t3a.medium",
+          "WeightedCapacity": 1,
+          "SubnetId": "subnet-c21517b8"
         },
         {
-          "DeviceName": "/dev/xvdb",
-          "VirtualName": "ephemeral0"
+          "InstanceType": "t3a.medium",
+          "WeightedCapacity": 1,
+          "SubnetId": "subnet-f49df7b8"
         },
         {
-          "DeviceName": "/dev/xvdc",
-          "VirtualName": "ephemeral1"
-        }
-      ],
-      "SpotPrice": "0.0052",
-      "SecurityGroups": [
-        {
-          "GroupId": "sg-0c704afde8a4fb6b6"
-        }
-      ],
-      "TagSpecifications": [
-        {
-          "ResourceType": "instance",
-          "Tags": [
-            {
-              "Key": "Name",
-              "Value": "mongo"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "ImageId": "ami-0e87ff30dbaecc3cb",
-      "InstanceType": "t3.small",
-      "SubnetId": "subnet-4320f628, subnet-82b7bbf8, subnet-7a641336",
-      "KeyName": "devops",
-      "BlockDeviceMappings": [
-        {
-          "DeviceName": "/dev/sda1",
-          "Ebs": {
-            "DeleteOnTermination": true,
-            "SnapshotId": "snap-06c799c048c6a1163",
-            "VolumeSize": 16,
-            "VolumeType": "gp2",
-            "Encrypted": false
-          }
+          "InstanceType": "t3.small",
+          "WeightedCapacity": 1,
+          "SubnetId": "subnet-1c8f5b77"
         },
         {
-          "DeviceName": "/dev/xvdb",
-          "VirtualName": "ephemeral0"
+          "InstanceType": "t3.small",
+          "WeightedCapacity": 1,
+          "SubnetId": "subnet-c21517b8"
         },
         {
-          "DeviceName": "/dev/xvdc",
-          "VirtualName": "ephemeral1"
-        }
-      ],
-      "SpotPrice": "0.0208",
-      "SecurityGroups": [
-        {
-          "GroupId": "sg-0c704afde8a4fb6b6"
-        }
-      ],
-      "TagSpecifications": [
-        {
-          "ResourceType": "instance",
-          "Tags": [
-            {
-              "Key": "Name",
-              "Value": "mongo"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "ImageId": "ami-0e87ff30dbaecc3cb",
-      "InstanceType": "t3.medium",
-      "SubnetId": "subnet-4320f628, subnet-82b7bbf8, subnet-7a641336",
-      "KeyName": "devops",
-      "BlockDeviceMappings": [
-        {
-          "DeviceName": "/dev/sda1",
-          "Ebs": {
-            "DeleteOnTermination": true,
-            "SnapshotId": "snap-06c799c048c6a1163",
-            "VolumeSize": 16,
-            "VolumeType": "gp2",
-            "Encrypted": false
-          }
+          "InstanceType": "t3.small",
+          "WeightedCapacity": 1,
+          "SubnetId": "subnet-f49df7b8"
         },
         {
-          "DeviceName": "/dev/xvdb",
-          "VirtualName": "ephemeral0"
+          "InstanceType": "t3.micro",
+          "WeightedCapacity": 1,
+          "SubnetId": "subnet-1c8f5b77"
         },
         {
-          "DeviceName": "/dev/xvdc",
-          "VirtualName": "ephemeral1"
-        }
-      ],
-      "SpotPrice": "0.0416",
-      "SecurityGroups": [
-        {
-          "GroupId": "sg-0c704afde8a4fb6b6"
-        }
-      ],
-      "TagSpecifications": [
-        {
-          "ResourceType": "instance",
-          "Tags": [
-            {
-              "Key": "Name",
-              "Value": "mongo"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "ImageId": "ami-0e87ff30dbaecc3cb",
-      "InstanceType": "t3.large",
-      "SubnetId": "subnet-4320f628, subnet-82b7bbf8, subnet-7a641336",
-      "KeyName": "devops",
-      "BlockDeviceMappings": [
-        {
-          "DeviceName": "/dev/sda1",
-          "Ebs": {
-            "DeleteOnTermination": true,
-            "SnapshotId": "snap-06c799c048c6a1163",
-            "VolumeSize": 16,
-            "VolumeType": "gp2",
-            "Encrypted": false
-          }
+          "InstanceType": "t3.micro",
+          "WeightedCapacity": 1,
+          "SubnetId": "subnet-c21517b8"
         },
         {
-          "DeviceName": "/dev/xvdb",
-          "VirtualName": "ephemeral0"
+          "InstanceType": "t3.micro",
+          "WeightedCapacity": 1,
+          "SubnetId": "subnet-f49df7b8"
         },
         {
-          "DeviceName": "/dev/xvdc",
-          "VirtualName": "ephemeral1"
-        }
-      ],
-      "SpotPrice": "0.0832",
-      "SecurityGroups": [
+          "InstanceType": "t3.nano",
+          "WeightedCapacity": 1,
+          "SubnetId": "subnet-1c8f5b77"
+        },
         {
-          "GroupId": "sg-0c704afde8a4fb6b6"
-        }
-      ],
-      "TagSpecifications": [
+          "InstanceType": "t3.nano",
+          "WeightedCapacity": 1,
+          "SubnetId": "subnet-c21517b8"
+        },
         {
-          "ResourceType": "instance",
-          "Tags": [
-            {
-              "Key": "Name",
-              "Value": "mongo"
-            }
-          ]
+          "InstanceType": "t3.nano",
+          "WeightedCapacity": 1,
+          "SubnetId": "subnet-f49df7b8"
+        },
+        {
+          "InstanceType": "t3.large",
+          "WeightedCapacity": 1,
+          "SubnetId": "subnet-1c8f5b77"
+        },
+        {
+          "InstanceType": "t3.large",
+          "WeightedCapacity": 1,
+          "SubnetId": "subnet-c21517b8"
+        },
+        {
+          "InstanceType": "t3.large",
+          "WeightedCapacity": 1,
+          "SubnetId": "subnet-f49df7b8"
         }
       ]
     }
   ],
-  "Type": "request",
   "TagSpecifications": [
     {
       "ResourceType": "spot-fleet-request",
       "Tags": [
         {
           "Key": "Name",
-          "Value": "mongo"
+          "Value": "frontend"
         }
       ]
     }
