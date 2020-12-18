@@ -6,7 +6,7 @@
 - name: Install Redis
   yum:
     name: redis
-    state: latest
+    state: present
     enablerepo: remi
 
 - name: Update Listen Address
