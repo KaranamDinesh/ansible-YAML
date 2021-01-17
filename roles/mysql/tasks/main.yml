@@ -26,6 +26,7 @@
   register: DB_STATUS
   ignore_errors: true
 
+
 - name: Grab default password
   shell: grep 'temporary password' /var/log/mysqld.log | awk '{print $NF}'
   register: MYSQL_DEFAULT_PASSWORD
