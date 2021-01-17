@@ -34,6 +34,7 @@
     name: nginx
     state: started
     enabled: yes
+  ignore_errors: yes
 
 - name: Include Prometheus Role
   include_role:
