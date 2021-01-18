@@ -18,6 +18,7 @@
     port: 3306
 
 - name: Check DB Connection
+
   community.mysql.mysql_query:
     login_db: mysql
     login_user: root
