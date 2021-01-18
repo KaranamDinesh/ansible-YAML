@@ -8,6 +8,7 @@
   template:
     src: node_exporter.service
     dest: /etc/systemd/system
+    remote_src: yes
   notify: Restart Node Exporter
 
 - name: Start Node Exporter
