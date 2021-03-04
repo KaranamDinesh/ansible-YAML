@@ -12,7 +12,7 @@
   user:
     name: roboshop
 
-- name: Include AZ CLI Installation
+- name: Include AZ CLI
   include_role:
     name: common
     tasks_from: az-cli-setup
