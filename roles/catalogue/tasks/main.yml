@@ -12,7 +12,7 @@
   user:
     name: roboshop
 
-- name: Include AZ CLI Installation steps
+- name: Include AZ CLI Installation
   include_role:
     name: common
     tasks_from: az-cli-setup
@@ -22,7 +22,7 @@
     path: "{{ARTIFACT_PATH}}"
     state: directory
 
-- name: Include artifact download steps
+- name: Include artifact download
   include_role:
     name: common
     tasks_from: artifact-download
