@@ -7,7 +7,6 @@ resource "aws_subnet" "private-subnets" {
     Name              = "private-subnet-${count.index+1}"
     Environment       = var.ENV
   }
-}
 
 resource "aws_subnet" "public-subnets" {
   count               = length(var.PUBLIC_SUBNETS)
