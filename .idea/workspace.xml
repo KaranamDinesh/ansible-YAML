@@ -22,9 +22,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="43d22eab-ac0f-4c41-a7cf-55dbc38d02f7" name="Default Changelist" comment="sample">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="43d22eab-ac0f-4c41-a7cf-55dbc38d02f7" name="Default Changelist" comment="sample" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -70,13 +68,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1602421031038</updated>
-    </task>
-    <task id="LOCAL-00219" summary="sample">
-      <created>1605782181671</created>
-      <option name="number" value="00219" />
-      <option name="presentableId" value="LOCAL-00219" />
-      <option name="project" value="LOCAL" />
-      <updated>1605782181671</updated>
     </task>
     <task id="LOCAL-00220" summary="sample">
       <created>1605782301954</created>
@@ -414,7 +405,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616166639960</updated>
     </task>
-    <option name="localTasksCounter" value="268" />
+    <task id="LOCAL-00268" summary="sample">
+      <created>1616171010140</created>
+      <option name="number" value="00268" />
+      <option name="presentableId" value="LOCAL-00268" />
+      <option name="project" value="LOCAL" />
+      <updated>1616171010140</updated>
+    </task>
+    <option name="localTasksCounter" value="269" />
     <servers />
   </component>
   <component name="UnknownFeatures">
