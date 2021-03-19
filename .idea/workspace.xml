@@ -23,8 +23,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="43d22eab-ac0f-4c41-a7cf-55dbc38d02f7" name="Default Changelist" comment="sample">
-      <change afterPath="$PROJECT_DIR$/terraform-vpc/env/dev.tfvars" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/terraform-vpc/env/prod.tfvars" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/terraform-vpc/states/data.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/terraform-vpc/states/main.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/terraform-vpc/states/makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/terraform-vpc/states/vars.tf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/terraform-vpc/env/dev.tfvars" beforeDir="false" afterPath="$PROJECT_DIR$/terraform-vpc/env/dev.tfvars" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +51,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="TF_FMT" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="TEXT" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/roles/user" />
     <property name="settings.editor.selected.configurable" value="com.microsoft.alm.plugin.idea.common.ui.settings.TeamServicesConfigurable" />
@@ -70,13 +76,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1602421031038</updated>
-    </task>
-    <task id="LOCAL-00216" summary="sample">
-      <created>1605778887736</created>
-      <option name="number" value="00216" />
-      <option name="presentableId" value="LOCAL-00216" />
-      <option name="project" value="LOCAL" />
-      <updated>1605778887736</updated>
     </task>
     <task id="LOCAL-00217" summary="sample">
       <created>1605779281033</created>
@@ -414,7 +413,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614827336056</updated>
     </task>
-    <option name="localTasksCounter" value="265" />
+    <task id="LOCAL-00265" summary="sample">
+      <created>1616162844107</created>
+      <option name="number" value="00265" />
+      <option name="presentableId" value="LOCAL-00265" />
+      <option name="project" value="LOCAL" />
+      <updated>1616162844107</updated>
+    </task>
+    <option name="localTasksCounter" value="266" />
     <servers />
   </component>
   <component name="UnknownFeatures">
