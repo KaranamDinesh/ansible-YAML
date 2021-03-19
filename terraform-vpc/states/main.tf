@@ -1,5 +1,4 @@
-resource "aws_subnet" "private-subnets"
-{
+resource "aws_subnet" "private-subnets" {
   count = length(var.PRIVATE_SUBNETS)
   cidr_block = element(var.PRIVATE_SUBNETS, count.index)
   vpc_id = aws_vpc.main.id
