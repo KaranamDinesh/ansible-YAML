@@ -22,7 +22,21 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="43d22eab-ac0f-4c41-a7cf-55dbc38d02f7" name="Default Changelist" comment="sample" />
+    <list default="true" id="43d22eab-ac0f-4c41-a7cf-55dbc38d02f7" name="Default Changelist" comment="sample">
+      <change afterPath="$PROJECT_DIR$/terraform-vpc/Makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/terraform-vpc/data.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/terraform-vpc/main.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/terraform-vpc/state.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/terraform-vpc/states/dev.tfvars" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/terraform-vpc/vars.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/terraform-vpc/states/data.tf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/terraform-vpc/states/main.tf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/terraform-vpc/states/makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/terraform-vpc/states/provider.tf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/terraform-vpc/states/state.tf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/terraform-vpc/states/vars.tf" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -68,20 +82,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1602421031038</updated>
-    </task>
-    <task id="LOCAL-00220" summary="sample">
-      <created>1605782301954</created>
-      <option name="number" value="00220" />
-      <option name="presentableId" value="LOCAL-00220" />
-      <option name="project" value="LOCAL" />
-      <updated>1605782301954</updated>
-    </task>
-    <task id="LOCAL-00221" summary="sample">
-      <created>1605783846845</created>
-      <option name="number" value="00221" />
-      <option name="presentableId" value="LOCAL-00221" />
-      <option name="project" value="LOCAL" />
-      <updated>1605783846845</updated>
     </task>
     <task id="LOCAL-00222" summary="sample">
       <created>1605869480444</created>
@@ -412,10 +412,25 @@
       <option name="project" value="LOCAL" />
       <updated>1616171010140</updated>
     </task>
-    <option name="localTasksCounter" value="269" />
+    <task id="LOCAL-00269" summary="sample">
+      <created>1616171151686</created>
+      <option name="number" value="00269" />
+      <option name="presentableId" value="LOCAL-00269" />
+      <option name="project" value="LOCAL" />
+      <updated>1616171151686</updated>
+    </task>
+    <task id="LOCAL-00270" summary="sample">
+      <created>1616171189784</created>
+      <option name="number" value="00270" />
+      <option name="presentableId" value="LOCAL-00270" />
+      <option name="project" value="LOCAL" />
+      <updated>1616171189784</updated>
+    </task>
+    <option name="localTasksCounter" value="271" />
     <servers />
   </component>
   <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="Makefile" />
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.conf" />
     <option featureType="com.intellij.fileTypeFactory" implementationName="main.yml" />
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.service" />
