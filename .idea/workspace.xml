@@ -24,6 +24,7 @@
   <component name="ChangeListManager">
     <list default="true" id="43d22eab-ac0f-4c41-a7cf-55dbc38d02f7" name="Default Changelist" comment="sample">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/terraform-vpc/states/dev.tfvars" beforeDir="false" afterPath="$PROJECT_DIR$/terraform-vpc/states/dev.tfvars" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,27 +71,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1602421031038</updated>
-    </task>
-    <task id="LOCAL-00227" summary="sample">
-      <created>1608217643316</created>
-      <option name="number" value="00227" />
-      <option name="presentableId" value="LOCAL-00227" />
-      <option name="project" value="LOCAL" />
-      <updated>1608217643332</updated>
-    </task>
-    <task id="LOCAL-00228" summary="sample">
-      <created>1608218409618</created>
-      <option name="number" value="00228" />
-      <option name="presentableId" value="LOCAL-00228" />
-      <option name="project" value="LOCAL" />
-      <updated>1608218409618</updated>
-    </task>
-    <task id="LOCAL-00229" summary="sample">
-      <created>1608218560186</created>
-      <option name="number" value="00229" />
-      <option name="presentableId" value="LOCAL-00229" />
-      <option name="project" value="LOCAL" />
-      <updated>1608218560186</updated>
     </task>
     <task id="LOCAL-00230" summary="sample">
       <created>1608220375528</created>
@@ -414,7 +394,28 @@
       <option name="project" value="LOCAL" />
       <updated>1616219735593</updated>
     </task>
-    <option name="localTasksCounter" value="276" />
+    <task id="LOCAL-00276" summary="sample">
+      <created>1616219799074</created>
+      <option name="number" value="00276" />
+      <option name="presentableId" value="LOCAL-00276" />
+      <option name="project" value="LOCAL" />
+      <updated>1616219799074</updated>
+    </task>
+    <task id="LOCAL-00277" summary="sample">
+      <created>1616219929535</created>
+      <option name="number" value="00277" />
+      <option name="presentableId" value="LOCAL-00277" />
+      <option name="project" value="LOCAL" />
+      <updated>1616219929536</updated>
+    </task>
+    <task id="LOCAL-00278" summary="sample">
+      <created>1616220008482</created>
+      <option name="number" value="00278" />
+      <option name="presentableId" value="LOCAL-00278" />
+      <option name="project" value="LOCAL" />
+      <updated>1616220008482</updated>
+    </task>
+    <option name="localTasksCounter" value="279" />
     <servers />
   </component>
   <component name="UnknownFeatures">

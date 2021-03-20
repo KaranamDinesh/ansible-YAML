@@ -1,3 +1,3 @@
-bucket = "rb-b51-dev1"
+bucket = "rb-b51-dev2"
 key    = "vpc/dev/terraform.tfstate"
-region = "us-east-2"
+region = "us-east-1"
