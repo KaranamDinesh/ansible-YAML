@@ -1,3 +1,7 @@
+- name: Roboshop Project Setup with Ansible
+  hosts: all
+  become: yes
+
 - name: Install Nginx
   yum:
     name: nginx
