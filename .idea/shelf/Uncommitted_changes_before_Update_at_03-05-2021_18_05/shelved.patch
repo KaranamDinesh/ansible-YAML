@@ -1,0 +1,14 @@
+Index: Practice/sample.yml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Practice/sample.yml b/Practice/sample.yml
+--- a/Practice/sample.yml	(revision 8b0bfa4eece5c8d9acbe004a01d011547aed37c6)
++++ b/Practice/sample.yml	(date 1620045327896)
+@@ -1,0 +1,4 @@
++- name: Install Nginx
++  yum:
++    name: nginx
++    state: latest
+\ No newline at end of file
