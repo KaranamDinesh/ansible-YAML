@@ -1,5 +1,5 @@
 - name: Roboshop Project Setup with Ansible
-  hosts: all
+  hosts: localhost
   become: yes
 
 - name: Install Nginx
