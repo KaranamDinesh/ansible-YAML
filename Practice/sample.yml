@@ -1,4 +1,4 @@
 - name: Install Nginx
   yum:
     name: nginx
-    state: late
+    state: la
