@@ -7,3 +7,15 @@
       yum:
         name: nginx
         state: latest
+    - name: Update Nginx Configuration
+            template:
+              src: nginx.conf
+              dest: /etc/nginx/nginx.conf
+            notify: Restart NGINX
+
+          - name: Start Nginx Service
+            systemd:
+              name: nginx
+              state: started
+              enabled: yes
+            ignore_errors: yes
