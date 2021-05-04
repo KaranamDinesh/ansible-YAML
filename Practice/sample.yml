@@ -3,3 +3,7 @@
   tasks:
     - debug:
         msg: Hello world
+    - name: Install Nginx
+      yum:
+        name: nginx
+        state: latest
