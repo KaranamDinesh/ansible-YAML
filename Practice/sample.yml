@@ -17,3 +17,8 @@
         state: started
         enabled: yes
       ignore_errors: yes
+    - name: replace
+      replace:
+        path: /etc/nginx/nginx.conf
+        regexp: 'dinesh1111'
+        replace: 'dinesh'
