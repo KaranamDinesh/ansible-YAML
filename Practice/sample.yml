@@ -11,7 +11,6 @@
       template:
           src: nginx.conf
           dest: /etc/nginx/nginx.conf
-
     - name: Start Nginx Service
       systemd:
         name: nginx
