@@ -38,7 +38,6 @@
     name: common
     tasks_from: artifact-download
 
-
 - name: Load MongoDB Schema
   shell: mongo < {{ item }}
   args:
