@@ -11,9 +11,9 @@
       template:
           src: nginx.conf
           dest: /etc/nginx/nginx.conf
-- name: Start Nginx Service
-    systemd:
-      name: nginx
-      state: started
-      enabled: yes
-    ignore_errors: yes
+    - name: Start Nginx Service
+      systemd:
+        name: nginx
+        state: started
+        enabled: yes
+      ignore_errors: yes
