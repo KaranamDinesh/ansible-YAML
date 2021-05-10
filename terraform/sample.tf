@@ -10,38 +10,51 @@ resource "aws_instance" "sample" {
     create_before_destroy = true
   }
 }
-provider "aws" {
-  region = "us-east-1"
+lifecycle {
+  create_before_destroy = true
 }
+provisioner "remote-exec" {
+  connection {
+    host = self.public_ip
+    user = "root"
+    password = "DevOps321"
+  }
+  inline = [
+    "yum install nginx -y "
+  ]
+}
+}
+provider "aws" {
+region = "us-east-2"
+}
+
 resource "aws_security_group" "allow_tls" {
-  name        = "allow_tls"
-  description = "Allow TLS inbound traffic"
+name        = "allow_tls"
+description = "Allow TLS inbound traffic"
 
-  dynamic "ingress" {
-    iterator = port
-    for_each = {
-      80 = "0.0.0.0/0"
-      443 = "2.2.2.2/32"
-      22 = "0.0.0.0/0"
+dynamic "ingress" {
+iterator = port
+for_each = {
+80 = "0.0.0.0/0"
+443 = "2.2.2.2/32"
+22 = "0.0.0.0/0"
 
-    }
-    content {
-      from_port   = port.key
-      to_port     = port.key
-      protocol    = "tcp"
-      cidr_blocks = [port.value]
-    }
-  }
+}
+content {
+from_port   = port.key
+to_port     = port.key
+protocol    = "tcp"
+cidr_blocks = [port.value]
+}
+}
+egress {
+from_port   = 0
+to_port     = 0
+protocol    = "-1"
+cidr_blocks = ["0.0.0.0/0"]
+}
 
-
-  egress {
-    from_port   = 0
-    to_port     = 0
-    protocol    = "-1"
-    cidr_blocks = ["0.0.0.0/0"]
-  }
-
-  tags = {
-    Name = "allow_tls"
-  }
+tags = {
+Name = "allow_tls"
+}
 }
