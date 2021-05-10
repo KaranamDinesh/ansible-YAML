@@ -23,7 +23,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="43d22eab-ac0f-4c41-a7cf-55dbc38d02f7" name="Default Changelist" comment="sample">
-      <change beforePath="$PROJECT_DIR$/Practice/sample.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Practice/sample.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/terraform/sample.tf" beforeDir="false" afterPath="$PROJECT_DIR$/terraform/sample.tf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +54,7 @@
     <property name="TF_FMT" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="TEXT" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/Practice" />
-    <property name="settings.editor.selected.configurable" value="com.microsoft.alm.plugin.idea.common.ui.settings.TeamServicesConfigurable" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -75,27 +76,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1602421031038</updated>
-    </task>
-    <task id="LOCAL-00247" summary="sample">
-      <created>1610868415830</created>
-      <option name="number" value="00247" />
-      <option name="presentableId" value="LOCAL-00247" />
-      <option name="project" value="LOCAL" />
-      <updated>1610868415830</updated>
-    </task>
-    <task id="LOCAL-00248" summary="sample">
-      <created>1610868595714</created>
-      <option name="number" value="00248" />
-      <option name="presentableId" value="LOCAL-00248" />
-      <option name="project" value="LOCAL" />
-      <updated>1610868595714</updated>
-    </task>
-    <task id="LOCAL-00249" summary="sample">
-      <created>1610868777989</created>
-      <option name="number" value="00249" />
-      <option name="presentableId" value="LOCAL-00249" />
-      <option name="project" value="LOCAL" />
-      <updated>1610868777989</updated>
     </task>
     <task id="LOCAL-00250" summary="sample">
       <created>1610890775507</created>
@@ -419,7 +399,28 @@
       <option name="project" value="LOCAL" />
       <updated>1620201916931</updated>
     </task>
-    <option name="localTasksCounter" value="296" />
+    <task id="LOCAL-00296" summary="sample">
+      <created>1620203485903</created>
+      <option name="number" value="00296" />
+      <option name="presentableId" value="LOCAL-00296" />
+      <option name="project" value="LOCAL" />
+      <updated>1620203485903</updated>
+    </task>
+    <task id="LOCAL-00297" summary="sample">
+      <created>1620203730834</created>
+      <option name="number" value="00297" />
+      <option name="presentableId" value="LOCAL-00297" />
+      <option name="project" value="LOCAL" />
+      <updated>1620203730834</updated>
+    </task>
+    <task id="LOCAL-00298" summary="sample">
+      <created>1620629326326</created>
+      <option name="number" value="00298" />
+      <option name="presentableId" value="LOCAL-00298" />
+      <option name="project" value="LOCAL" />
+      <updated>1620629326326</updated>
+    </task>
+    <option name="localTasksCounter" value="299" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -457,5 +458,9 @@
     <MESSAGE value="1234 changed in anisble file" />
     <MESSAGE value="sample" />
     <option name="LAST_COMMIT_MESSAGE" value="sample" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
