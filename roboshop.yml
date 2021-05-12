@@ -3,7 +3,6 @@
   become: yes
   #serial: 1  # This option is going server by server, Note: This will slow down the run time.
   ## become also can be given at task level, But it applies only to that task. Giving at play level will be applicable to all the tasks.
-  tasks:
     - name: Prechecks
       import_role:
         name: common
