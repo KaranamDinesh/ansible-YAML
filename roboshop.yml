@@ -1,13 +1,13 @@
 - name: Roboshop Project Setup with Ansible
   hosts: all
   become: yes
-  #serial: 1  # This option is going server by server, Note: This will slow down the run time.
   ## become also can be given at task level, But it applies only to that task. Giving at play level will be applicable to all the tasks.
     - name: Prechecks
       import_role:
         name: common
         tasks_from: prechecks
       tags:
+//rollback
         - frontend
         - catalogue
         - mongo
