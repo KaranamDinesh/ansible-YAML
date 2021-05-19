@@ -24,8 +24,6 @@
   <component name="ChangeListManager">
     <list default="true" id="43d22eab-ac0f-4c41-a7cf-55dbc38d02f7" name="Default Changelist" comment="sample">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/terraform-vpc/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/terraform-vpc/main.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/terraform-vpc/states/dev.tfvars" beforeDir="false" afterPath="$PROJECT_DIR$/terraform-vpc/states/dev.tfvars" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,13 +75,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1602421031038</updated>
-    </task>
-    <task id="LOCAL-00260" summary="sample">
-      <created>1610942250480</created>
-      <option name="number" value="00260" />
-      <option name="presentableId" value="LOCAL-00260" />
-      <option name="project" value="LOCAL" />
-      <updated>1610942250480</updated>
     </task>
     <task id="LOCAL-00261" summary="sample">
       <created>1610944382955</created>
@@ -421,7 +412,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620738528767</updated>
     </task>
-    <option name="localTasksCounter" value="309" />
+    <task id="LOCAL-00309" summary="sample">
+      <created>1621425897733</created>
+      <option name="number" value="00309" />
+      <option name="presentableId" value="LOCAL-00309" />
+      <option name="project" value="LOCAL" />
+      <updated>1621425897733</updated>
+    </task>
+    <option name="localTasksCounter" value="310" />
     <servers />
   </component>
   <component name="UnknownFeatures">
