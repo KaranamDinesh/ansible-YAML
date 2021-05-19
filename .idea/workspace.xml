@@ -23,9 +23,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="43d22eab-ac0f-4c41-a7cf-55dbc38d02f7" name="Default Changelist" comment="sample">
-      <change beforePath="$PROJECT_DIR$/terraform-vpc/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/terraform-vpc/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/terraform-vpc/provider.tf" beforeDir="false" afterPath="$PROJECT_DIR$/terraform-vpc/provider.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/terraform-vpc/state.tf" beforeDir="false" afterPath="$PROJECT_DIR$/terraform-vpc/state.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/terraform-vpc/states/dev.tfvars" beforeDir="false" afterPath="$PROJECT_DIR$/terraform-vpc/states/dev.tfvars" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,13 +76,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1602421031038</updated>
-    </task>
-    <task id="LOCAL-00263" summary="sample">
-      <created>1614827306668</created>
-      <option name="number" value="00263" />
-      <option name="presentableId" value="LOCAL-00263" />
-      <option name="project" value="LOCAL" />
-      <updated>1614827306669</updated>
     </task>
     <task id="LOCAL-00264" summary="sample">
       <created>1614827336056</created>
@@ -421,7 +413,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621426648901</updated>
     </task>
-    <option name="localTasksCounter" value="312" />
+    <task id="LOCAL-00312" summary="sample">
+      <created>1621426991129</created>
+      <option name="number" value="00312" />
+      <option name="presentableId" value="LOCAL-00312" />
+      <option name="project" value="LOCAL" />
+      <updated>1621426991129</updated>
+    </task>
+    <option name="localTasksCounter" value="313" />
     <servers />
   </component>
   <component name="UnknownFeatures">
