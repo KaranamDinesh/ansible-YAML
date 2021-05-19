@@ -22,7 +22,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="43d22eab-ac0f-4c41-a7cf-55dbc38d02f7" name="Default Changelist" comment="sample" />
+    <list default="true" id="43d22eab-ac0f-4c41-a7cf-55dbc38d02f7" name="Default Changelist" comment="sample">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -73,41 +75,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1602421031038</updated>
-    </task>
-    <task id="LOCAL-00270" summary="sample">
-      <created>1616171189784</created>
-      <option name="number" value="00270" />
-      <option name="presentableId" value="LOCAL-00270" />
-      <option name="project" value="LOCAL" />
-      <updated>1616171189784</updated>
-    </task>
-    <task id="LOCAL-00271" summary="sample">
-      <created>1616218076462</created>
-      <option name="number" value="00271" />
-      <option name="presentableId" value="LOCAL-00271" />
-      <option name="project" value="LOCAL" />
-      <updated>1616218076464</updated>
-    </task>
-    <task id="LOCAL-00272" summary="sample">
-      <created>1616218449356</created>
-      <option name="number" value="00272" />
-      <option name="presentableId" value="LOCAL-00272" />
-      <option name="project" value="LOCAL" />
-      <updated>1616218449356</updated>
-    </task>
-    <task id="LOCAL-00273" summary="sample">
-      <created>1616219203992</created>
-      <option name="number" value="00273" />
-      <option name="presentableId" value="LOCAL-00273" />
-      <option name="project" value="LOCAL" />
-      <updated>1616219203992</updated>
-    </task>
-    <task id="LOCAL-00274" summary="sample">
-      <created>1616219480665</created>
-      <option name="number" value="00274" />
-      <option name="presentableId" value="LOCAL-00274" />
-      <option name="project" value="LOCAL" />
-      <updated>1616219480665</updated>
     </task>
     <task id="LOCAL-00275" summary="sample">
       <created>1616219735593</created>
@@ -417,7 +384,42 @@
       <option name="project" value="LOCAL" />
       <updated>1621434870579</updated>
     </task>
-    <option name="localTasksCounter" value="319" />
+    <task id="LOCAL-00319" summary="sample">
+      <created>1621434931596</created>
+      <option name="number" value="00319" />
+      <option name="presentableId" value="LOCAL-00319" />
+      <option name="project" value="LOCAL" />
+      <updated>1621434931596</updated>
+    </task>
+    <task id="LOCAL-00320" summary="sample">
+      <created>1621435005017</created>
+      <option name="number" value="00320" />
+      <option name="presentableId" value="LOCAL-00320" />
+      <option name="project" value="LOCAL" />
+      <updated>1621435005017</updated>
+    </task>
+    <task id="LOCAL-00321" summary="sample">
+      <created>1621435074458</created>
+      <option name="number" value="00321" />
+      <option name="presentableId" value="LOCAL-00321" />
+      <option name="project" value="LOCAL" />
+      <updated>1621435074458</updated>
+    </task>
+    <task id="LOCAL-00322" summary="sample">
+      <created>1621435453856</created>
+      <option name="number" value="00322" />
+      <option name="presentableId" value="LOCAL-00322" />
+      <option name="project" value="LOCAL" />
+      <updated>1621435453856</updated>
+    </task>
+    <task id="LOCAL-00323" summary="sample">
+      <created>1621435611895</created>
+      <option name="number" value="00323" />
+      <option name="presentableId" value="LOCAL-00323" />
+      <option name="project" value="LOCAL" />
+      <updated>1621435611895</updated>
+    </task>
+    <option name="localTasksCounter" value="324" />
     <servers />
   </component>
   <component name="UnknownFeatures">
